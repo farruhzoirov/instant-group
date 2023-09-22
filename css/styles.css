@@ -12,6 +12,7 @@
 /*Global styles*/
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before,
@@ -242,9 +243,8 @@ img {
     position: absolute;
     top: 220px;
     left: 755px;
-
-
     border: 0;
+    cursor: pointer;
     background-color: transparent;
 
 
@@ -327,13 +327,20 @@ img {
 }
 
 
+
+
 .intro-about-team-item:nth-child(odd) {
     transform: rotate(-2deg);
+
 }
 
 .intro-about-team-item:nth-child(even) {
     transform: rotate(2deg);
+
 }
+
+
+
 
 .intro-about-team-item:not(:last-child) {
     margin-right: 8.5px;
@@ -362,14 +369,150 @@ img {
 }
 
 
-
-
-
+/*Site main styles*/
 
 .site-main {
     flex-grow: 1;
+    padding-top: 140px;
 
 }
+
+/*Our services section*/
+.site-main-our-services {
+    display: flex;
+}
+.site-main-our-services__left {
+    background-image: url("../img/intro-outer-left.png");
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+
+    width: 50%;
+    min-height: 734px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.our-services__content {
+    width: 460px;
+    height: 126px;
+}
+
+.our-services__content__heading {
+    color: #1E242F;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+
+.our-services__content__heading span {
+    color: var(--rarely-color);
+    font-family: var(--secondary-font);
+}
+
+
+
+.our-services_content__text {
+    color: var(--gray-darker);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/*Our services right*/
+.site-main-learn-business__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.learn-business-heading__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 573px;
+    margin-bottom: 18px;
+}
+
+.learn-business-heading__title {
+    color: #000;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.learn-business__text {
+    color: var(--gray-darker);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+
+.learn-business-application-button {
+    width: 292px;
+    padding: 12px 32px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background-color: var(--button-bg-color);
+    border: 0;
+    cursor: pointer;
+
+}
+
+.learn-business-application-button:active {
+    opacity: 0.6;
+}
+
+.button-inner {
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+
+
+
+/*Kasb turlari*/
+.learn-course-directions-list {
+    display: flex;
+    flex-direction: column;
+    width: 573px;
+
+}
+
+
+.learn-course-direction__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 31.5px 0;
+
+}
+
+.learn-course-direction__item:first-child {
+    border-top: 1px solid #C0C6D3;
+}
+
+.learn-course-direction__item:not(:last-child){
+    border-bottom: 1px solid #C0C6D3;
+}
+
+.learn-course-direction__item strong {
+    color: #000;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+
 
 
 
@@ -383,11 +526,13 @@ img {
 
 @media  only screen and (min-width: 1920px) {
     .container {
-
         max-width: 1260px;
         width: 100%;
 
 
+    }
+    .sitenav-list-item:not(:last-child) {
+        margin-right: 35px;
     }
 
     .intro-heading-about-video {
