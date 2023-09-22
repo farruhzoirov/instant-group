@@ -246,6 +246,7 @@ img {
 
 
 
+
 }
 
 .site-intro__left-img {
@@ -352,9 +353,8 @@ img {
 
 
 .site-main {
-    height: 100vh;
     flex-grow: 1;
-    background-color: #fff;
+
 }
 
 
@@ -372,6 +372,16 @@ img {
 
         max-width: 1260px;
         width: 100%;
+
+
+    }
+
+    .intro-heading-about-video {
+        top: 220px;
+        left: 805px;
+
+
+
 
 
     }
