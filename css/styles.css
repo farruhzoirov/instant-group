@@ -217,6 +217,8 @@ img {
 .intro-heading-communication-link {
     padding: 12px 32px;
     border-radius: 12px;
+    border: 0;
+    cursor: pointer;
     background-color: var(--button-bg-color);
 
 }
@@ -235,19 +237,46 @@ img {
 
 
 .intro-heading-about-video {
+    width: 250px;
+    height: 250px;
     position: absolute;
     top: 220px;
     left: 755px;
-    width: 206px;
-    height: 231px;
-    display: inline-flex;
-    transform: rotate(-15deg);
-    flex-direction: column;
+
+
+    border: 0;
+    background-color: transparent;
 
 
 
 
 }
+.intro-video-link-container {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+
+
+}
+
+.intro-video-link-container span {
+    text-align: center;
+}
+
+
+.intro-heading-about-video span {
+    color: var(--gray-darker);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+
+
 
 .site-intro__left-img {
     position: absolute;
@@ -263,34 +292,19 @@ img {
 
 
 
-.intro-video-link-container {
-    background-image: url("../img/about-us-video-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 192px;
-    height: 192px;
-    border-radius: 50%;
-    border: 1px dashed #368A8C;
-    margin-bottom: 8px;
 
-}
 
-.intro-heading-about-video span {
-    color: var(--gray-darker);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 140%;
-}
 
 
 
    /*INTRO ABOUT TEAM*/
 
 .intro-about-team-wrapper {
-   position: absolute;
+    margin: 0 auto;
+    position: absolute;
     top: 575px;
+    left: 30px;
+
 }
 
 .intro-about-team-list {
