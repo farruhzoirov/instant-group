@@ -56,7 +56,9 @@ img {
 
 .container {
     position: relative;
-    max-width: 1160px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
