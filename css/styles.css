@@ -1,5 +1,4 @@
 /*CUSTOM VARIABLE*/
-
 :root {
     --primary-font:"Poppins",Arial, sans-serif;
     --secondary-font:"Tektur","Poppins", Arial,sans-serif;
@@ -9,6 +8,8 @@
     --rarely-color:#368A8C;
     --button-bg-color:#66368C;
 }
+
+
 /*Global styles*/
 html {
     box-sizing: border-box;
@@ -72,6 +73,31 @@ img {
     width: 100%;
 
 }
+.button {
+    padding: 12px 32px;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--button-bg-color);
+
+}
+
+.green-color-text {
+    color: var(--rarely-color);
+    font-family: var(--secondary-font);
+}
+
+.some-sections-heading {
+    color: #1E242F;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+
+
+
 
          /*Site-header styles*/
 .site-header {
@@ -93,11 +119,24 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .site-logo {
     display: block;
     width: 163px;
     height: 45px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 .site-logo_img {
     display: block;
@@ -217,14 +256,7 @@ img {
 }
 
 
-.intro-heading-communication-link {
-    padding: 12px 32px;
-    border-radius: 12px;
-    border: 0;
-    cursor: pointer;
-    background-color: var(--button-bg-color);
 
-}
 .intro-heading-communication-link:active {
     opacity: 0.6;
 }
@@ -302,10 +334,12 @@ img {
    /*INTRO ABOUT TEAM*/
 
 .intro-about-team-wrapper {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 575px;
-    left: 30px;
+    left: 0;
+    width: 100%;
 
 }
 
@@ -366,9 +400,6 @@ img {
 }
 
 
-.intro-about-team-item:hover {
-    transform: scaleY(1.2);
-}
 
 
 /*Site main styles*/
@@ -382,6 +413,7 @@ img {
 /*Our services section*/
 .site-main-our-services {
     display: flex;
+    margin-bottom: 80px;
 }
 .site-main-our-services__left {
     background-image: url("../img/intro-outer-left.png");
@@ -401,18 +433,10 @@ img {
 }
 
 .our-services__content__heading {
-    color: #1E242F;
-    font-family: var(--secondary-font);
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 132.5%;
+
 }
 
 
-.our-services__content__heading span {
-    color: var(--rarely-color);
-    font-family: var(--secondary-font);
-}
 
 
 
@@ -455,15 +479,11 @@ img {
 }
 
 
+
+
 .learn-business-application-button {
     width: 292px;
-    padding: 12px 32px;
     margin-bottom: 24px;
-    border-radius: 12px;
-    background-color: var(--button-bg-color);
-    border: 0;
-    cursor: pointer;
-
 }
 
 .learn-business-application-button:active {
@@ -481,7 +501,9 @@ img {
 
 
 
-/*Kasb turlari*/
+         /*Kasb turlari*/
+
+
 .learn-course-directions-list {
     display: flex;
     flex-direction: column;
@@ -491,11 +513,14 @@ img {
 
 
 .learn-course-direction__item {
+    padding: 31.5px 0;
+
+}
+
+.learn-course-direction-item__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 31.5px 0;
-
 }
 
 .learn-course-direction__item:first-child {
@@ -513,6 +538,20 @@ img {
     font-weight: 500;
     line-height: 140%;
 }
+
+
+
+/*Why do you need to select us styles*/
+
+
+.main-why-we-container {
+    display: flex;
+    background-image: url("../img/why-we-bg.jpg");
+    min-height: 625px;
+    padding-top: 60px;
+}
+
+
 
 
 
@@ -583,5 +622,10 @@ only screen and (                min-resolution: 2dppx) {
     .intro-video-link-container {
         background-image: url("../img/about-us-video-bg@2x.png");
     }
+    .main-why-we-container {
+
+        background-image: url("../img/why-we-bg@2x.jpg");
+    }
+
 
 }
