@@ -1,4 +1,4 @@
-/*CUSTOM VARIABLE*/
+/*CUSTOM VARIABLES*/
 :root {
     --primary-font:"Poppins",Arial, sans-serif;
     --secondary-font:"Tektur","Poppins", Arial,sans-serif;
@@ -545,11 +545,97 @@ img {
 
 
 .main-why-we-container {
-    display: flex;
     background-image: url("../img/why-we-bg.jpg");
-    min-height: 625px;
-    padding-top: 60px;
+     min-height: 625px;
+     padding-top: 60px;
 }
+
+.main-why-we-inner {
+    display: flex;
+
+}
+
+
+/*Main why we left*/
+
+.main-why-we__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 625px;
+
+}
+
+.why-we-left__heading {
+
+}
+
+
+
+/*Main why we right*/
+
+
+.main-why-we__right {
+    width: 50%;
+     height: 625px;
+}
+
+.main-why-we-right__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.main-why-we-right-list__item {
+    width: 281px;
+    height: 163px;
+    padding: 25px 25px 41px 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 9px 18px 0 #E5EEEE;
+
+}
+
+.main-why-we-right-list__item:nth-child(odd) {
+    margin-right: 7px;
+}
+
+
+.main-why-we-right-list__item:first-child {
+    transform: rotate(-2deg);
+}
+
+
+
+.main-why-we-right-list__item:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.main-why-we-right-list__item:nth-child(3) {
+    transform: rotate(2deg);
+}
+
+
+.main-why-we-right-list__item:nth-child(4) {
+    transform: rotate(-2deg);
+}
+
+
+.main-why-we-right-list__item:nth-child(5) {
+    transform: rotate(-2deg);
+}
+
+.main-why-we-right-list__item:nth-child(6) {
+    transform: rotate(2deg);
+}
+
+
+
+
+
+
+
 
 
 
@@ -615,15 +701,12 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-    body {
+    .header-intro-container {
         background-image: url("../img/intro-general-bg@2x.jpg");
     }
 
-    .intro-video-link-container {
-        background-image: url("../img/about-us-video-bg@2x.png");
-    }
-    .main-why-we-container {
 
+    .main-why-we-container {
         background-image: url("../img/why-we-bg@2x.jpg");
     }
 
