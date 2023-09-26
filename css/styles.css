@@ -96,6 +96,11 @@ img {
     line-height: 132.5%;
 }
 
+*:focus {
+    outline: 2px dashed var(--button-bg-color);
+    outline-offset: 5px;
+}
+
 
 
 
