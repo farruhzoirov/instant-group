@@ -74,6 +74,7 @@ img {
 
 }
 .button {
+    width: 292px;
     padding: 12px 32px;
     border-radius: 12px;
     border: 0;
@@ -228,19 +229,24 @@ img {
 
 .intro-heading {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
     position: relative;
 }
 
+.intro-heading-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
 .intro-heading h1{
-    width: 1033px;
     text-align: center;
     color:  #1E242F;
     font-family:var(--secondary-font);
     font-size: 50px;
-    font-style: normal;
     font-weight: 600;
     line-height: 129%;
 }
@@ -254,14 +260,30 @@ img {
     line-height: 129%;
 }
 
-.intro-heading p {
-    width: 500px;
+.intro-heading-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.intro-heading-text p {
     text-align: center;
+    width: 500px;
     color: var(--primary-color);
     font-size: 20px;
     font-weight: 400;
     line-height: 140%;
 }
+
+
+.intro-heading-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+
 
 
 
@@ -329,7 +351,7 @@ img {
 .site-intro__right-img {
     position: absolute;
     right: -20px;
-    top: 385px;
+    top: 410px;
 }
 
 
@@ -345,7 +367,7 @@ img {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 570px;
+    top: 600px;
     left: 0;
     width: 100%;
 
@@ -493,7 +515,6 @@ img {
 
 
 .learn-business-application-button {
-    width: 292px;
     margin-bottom: 24px;
 }
 
@@ -563,10 +584,12 @@ img {
     background-image: url("../img/why-we-bg.jpg");
      min-height: 625px;
      padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .main-why-we-inner {
     display: flex;
+    align-items: flex-start;
 
 }
 
@@ -577,12 +600,13 @@ img {
     width: 50%;
     display: flex;
     flex-direction: column;
-    height: 625px;
+    justify-content: space-between;
+    height: 525px;
 
 }
 
 .why-we-left__heading {
-
+    width: 460px;
 }
 
 
@@ -592,7 +616,7 @@ img {
 
 .main-why-we__right {
     width: 50%;
-     height: 625px;
+    height: 525px;
 }
 
 .main-why-we-right__list {
@@ -645,6 +669,22 @@ img {
     transform: rotate(2deg);
 }
 
+
+
+.main-why-we-right-list__item h3 {
+    color: #000;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 132.5%;
+}
+
+
+
+.actions-container {
+    height: 695px;
+    background-color: #ffffff;
+}
 
 
 
