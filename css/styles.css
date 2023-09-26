@@ -153,7 +153,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.6s ease ;
+
 }
 
 .sitenav-list-item:not(:last-child) {
@@ -163,6 +163,12 @@ img {
     color: var(--rarely-color);
     font-size: 17px;
     line-height: normal;
+
+}
+
+.sitenav-item-link::after {
+    content: "";
+    transition: all 0.6s  ease;
 }
 .sitenav-list-item:hover .sitenav-item-link::after  {
     content: "";
@@ -195,6 +201,7 @@ img {
     font-weight: 400;
     line-height: normal;
     white-space: nowrap;
+    transition: all 0.6s ease;
 }
 
 
@@ -204,6 +211,7 @@ img {
     font-size: 17px;
     font-weight: 600;
     line-height: normal;
+    white-space: nowrap;
 }
 .header-contact-us:active {
     opacity: 0.6;
@@ -337,7 +345,7 @@ img {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 575px;
+    top: 570px;
     left: 0;
     width: 100%;
 
@@ -353,7 +361,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 222px;
+    width: 224px;
     height: 105px;
     padding: 18px 0;
     border-radius: 12px;
@@ -379,7 +387,7 @@ img {
 
 
 .intro-about-team-item:not(:last-child) {
-    margin-right: 8.5px;
+    margin-right: 8.7px;
 }
 
 .intro-about-team-item strong {
@@ -461,6 +469,10 @@ img {
     margin-bottom: 18px;
 }
 
+.learn-business-heading__wrapper img {
+    cursor: pointer;
+}
+
 .learn-business-heading__title {
     color: #000;
     font-family: var(--secondary-font);
@@ -520,6 +532,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.learn-course-direction-item__inner img {
+    cursor: pointer;
 }
 
 .learn-course-direction__item:first-child {
