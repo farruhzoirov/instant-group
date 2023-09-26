@@ -189,6 +189,10 @@ img {
 
 }
 
+.sitenav-list-item:hover {
+    opacity: 0.8;
+}
+
 .sitenav-list-item:active {
     opacity: 0.6;
 }
@@ -288,7 +292,9 @@ img {
 
 }
 
-
+.intro-heading-communication-link:hover {
+    opacity: 0.8;
+}
 
 
 
