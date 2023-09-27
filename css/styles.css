@@ -57,9 +57,9 @@ img {
 
 .container {
     position: relative;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1220px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -232,7 +232,7 @@ img {
 
 .site-intro {
     padding-top: 70px;
-    padding-bottom: 350px;
+    padding-bottom: 240px;
 
 }
 
@@ -375,17 +375,17 @@ img {
    /*INTRO ABOUT TEAM*/
 
 .intro-about-team-wrapper {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 600px;
-    left: 0;
     width: 100%;
+    position: relative;
+    top: 300px;
 
 }
 
 .intro-about-team-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 }
 
@@ -394,7 +394,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 224px;
+    width: 225px;
     height: 105px;
     padding: 18px 0;
     border-radius: 12px;
@@ -420,7 +420,7 @@ img {
 
 
 .intro-about-team-item:not(:last-child) {
-    margin-right: 8.7px;
+    margin-right: 8.8px;
 }
 
 .intro-about-team-item strong {
@@ -736,6 +736,14 @@ img {
 
 
 
+    }
+
+    .intro-about-team-item {
+        width: 226px;
+    }
+
+    .intro-about-team-item:not(:last-child) {
+        margin-right: 17px;
     }
 
 }
