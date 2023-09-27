@@ -98,7 +98,7 @@ img {
 
 *:focus {
     outline: 2px dashed var(--button-bg-color);
-    outline-offset: 5px;
+    outline-offset: 4px;
 }
 
 
@@ -308,6 +308,48 @@ img {
     line-height: 140%;
 }
 
+@keyframes hoverWave {
+    0% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0     0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+    }
+
+    40% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2)
+    }
+
+    80% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+    }
+
+    100% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+    }
+}
+
+/* animations icon */
+@keyframes hover-clicked {
+    0% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0     0 rgba(102,54,140, 0.4), 0 0 0 0 rgba(56, 163, 253, 0.2)
+    }
+
+    40% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 15px rgba(102,54,140, 0.4), 0 0 0 0 rgba(56, 163, 253, 0.2)
+    }
+
+    80% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(102,54,140, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067)
+    }
+
+    100% {
+        box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3), 0 0 0 30px rgba(102,54,140, 0), 0 0 0 40px rgba(56, 163, 253, 0.0)
+    }
+}
+
+/* animations icon */
+
+
+
+
 
 .intro-heading-about-video {
     width: 250px;
@@ -316,20 +358,33 @@ img {
     top: 220px;
     left: 755px;
     border: 0;
+    border-radius: 50%;
     cursor: pointer;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1600ms ease 0s normal none 2 running shake;
+    animation-iteration-count: infinite;
+    animation-name: hover-clicked;
 
 
 
 
 }
 .intro-video-link-container {
-    display: flex;
-    flex-direction: column;
-    width: 235px;
-    height: 235px;
-    border-radius: 50%;
+    display: inline-block;
+    width: 100%;
 
+
+
+}
+
+.intro-video-link-container img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -469,9 +524,6 @@ img {
     height: 126px;
 }
 
-.our-services__content__heading {
-
-}
 
 
 
